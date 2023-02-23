@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Hanken Grotesk";
+  background-color: whitesmoke;
+}
+.container {
+  width: 700px;
+  border-radius: 25px;
+  margin: 7% auto;
+  display: flex;
+  background-color: white;
+}
+.score {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 45%;
+  border-radius: 25px;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 87%, 49%));
+}
+.score h3 {
+  color: lightgray;
+  margin: 20px 0px;
+}
+
+.score .circle {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin: 30px auto;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  position: relative;
+}
+.score p {
+  margin: 20px 0px;
+  color: lightgray;
+  font-size: 18px;
+  padding: 20px 12px;
+}
+
+.circle .h1 {
+  position: absolute;
+  bottom: 28%;
+  left: 34%;
+  color: lightgray;
+}
+.h1 h1 {
+  font-weight: 900;
+  color: white;
+}
+
+.summary {
+  padding: 30px;
+  width: 55%;
+}
+.item {
+  display: flex;
+  padding: 20px;
+  margin: 16px 0px;
+  justify-content: space-between;
+}
+.item .right {
+  gap: 10px;
+
+  display: flex;
+}
+.item .scores {
+  display: flex;
+}
+
+.right.reaction {
+  color: hsl(0, 100%, 67%);
+}
+.right.memory {
+  color: hsl(39, 100%, 56%);
+}
+.right.verbal {
+  color: hsl(166, 100%, 37%);
+}
+.right.visual {
+  color: hsl(234, 85%, 45%);
+}
+.item.one {
+  border-radius: 5px;
+  background: hsl(0, 100%, 67%, 0.1);
+}
+.item.two {
+  border-radius: 5px;
+  background: hsl(39, 100%, 56%, 0.1);
+}
+.item.three {
+  border-radius: 5px;
+  background: hsl(166, 100%, 37%, 0.1);
+}
+.item.four {
+  border-radius: 5px;
+  background: hsl(234, 85%, 45%, 0.1);
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  background-color: hsl(224, 30%, 27%);
+}
+
+button:hover {
+  transition: all 0.3s;
+  background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 87%, 49%));
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .score {
+    border-radius: 0px 0px 25px 25px;
+    width: 90%;
+    padding: 0px 20px;
+  }
+  .summary {
+    width: 90%;
+    padding: 10px 20px;
+  }
+}
